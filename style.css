@@ -1,0 +1,127 @@
+body {
+    background-image: url(image.png);
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header section */
+#h1-colour {
+    background-color: rgb(55, 46, 45);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(250, 247, 247);
+   
+}
+
+
+
+/* Input and button area */
+.upper-portion {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.upper-portion input,
+.upper-portion button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    max-width: 90%;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Quiz container */
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(215, 190, 209, 0.5);
+    border-radius: 8px;
+}
+
+/* Scientist image */
+#scientist-img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Inputs and buttons inside quiz */
+#guess-input,
+#submit-btn,
+#stop-btn,
+#load-topic-btn,
+#quiz-container button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+  
+   
+}
+
+/* Feedback and score */
+#feedback {
+    font-weight: bold;
+    margin: 1rem auto;
+}
+
+#score {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    #scientist-img {
+        width: 80px;
+        height: 120px;
+    }
+
+    .upper-portion input,
+    .upper-portion button,
+    #guess-input,
+    #submit-btn,
+    #stop-btn {
+        font-size: 0.9rem;
+    }
+}
+/* Style all buttons with a base background and hover effect */
+button {
+    background-color: #ccebcd; /* base green */
+    color: rgb(69, 49, 49);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #95cb95; /* slightly darker on hover */
+}
+
